@@ -127,18 +127,7 @@ $(document).ready(function () {
 
 <div id="osym-data-tidy-analysis-exercise-individual" class="section level2">
 <h2>OSYM Data Tidy Analysis Exercise (Individual)</h2>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ───────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
-<pre><code>## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
-## ✔ tibble  1.4.2     ✔ dplyr   0.7.4
-## ✔ tidyr   0.8.0     ✔ stringr 1.3.0
-## ✔ readr   1.1.1     ✔ forcats 0.3.0</code></pre>
-<pre><code>## ── Conflicts ──────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(dplyr)
-library(ggplot2)
-load(&quot;/cloud/project/osym_data_2017_v2.RData&quot;)
+<pre class="r"><code>load(&quot;/cloud/project/osym_data_2017_v2.RData&quot;)
 osym_data_2017 &lt;- osym_data_2017 %&gt;% mutate(general_quota = as.numeric(general_quota), general_placement=as.numeric(general_placement))
 osym_data_2017</code></pre>
 <pre><code>## # A tibble: 11,465 x 14
